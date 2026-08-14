@@ -20,7 +20,7 @@ pipeline {
             steps {
                 bat 'docker stop devops-html-demo || exit 0'
                 bat 'docker rm devops-html-demo || exit 0'
-                bat 'docker run -d -p 8080:80 --name devops-html-demo devops-html-demo:latest'
+                bat 'docker run -d -p 8081:80 --name devops-html-demo devops-html-demo:latest'
             }
         }
 
